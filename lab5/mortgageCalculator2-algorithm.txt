@@ -1,0 +1,91 @@
+COMSC-110-8215
+Teacher
+
+1. Objective: calculate monthly mortgage payment over a 30 year payback period.
+
+2. Requirements:
+--INPUT:
+p (assigned by author or user)
+interestRate (specified by author or user)
+paybackPeriod = 30 (years)
+
+--PROCESSING:
+r = interestRate / 12
+n = paybackPeriod * 12
+payment = (p * (1 + r)^n * r) / ((1 + r)^n - 1)
+
+
+--OUTPUT:
+objective
+author
+user instructions (if any)
+label1 "Amount borrowed (programmer input) = $"
+label2 "Annual interest rate (programmer input) = "
+label3 "%"
+label4 "Payback period (programmer input) = "
+label5 " Years"
+label6 "Monthly payment (calculated output) = $"
+p
+interestRate
+paybackPeriod
+payment
+
+
+--DATA:
+interestRate-->>annual interest rate (decimal unformatted)
+paybackPeriod-->>time period to payback the amount borrowed (integer)
+p-->>amount borrowed (integer)
+r-->>monthly percent interest rate (decimal)
+n-->>number of monthly payments in a payback period (integer)
+payment-->>calculated monthly payment (decimal formatted to 2 digits past the decimal point)
+
+
+3. Algorithm instructions
+10 output objective
+20 output author
+30 Prompt the user to enter the dollar amount borrowed as a whole number (for example, for $500,000, enter 500000).
+40 Prompt the user to enter the annual percent interest rate, with any number of decimal digits (for example, for 5.85% annual interest rate, enter 5.85. For 6%, enter 6).
+
+1c. Calculate the monthly payment in dollars, as a floating-point number.
+1d. Include in the output an echo of the input amount borrowed, the annual percent interest rate
+(without formatting) and the payback period (in years).
+1e. Include in the output the calculated monthly payment, formatted to show two decimal places 
+(like this: 1000.00)
+50 paybackPeriod = 30
+60 n = paybackPeriod *12
+70 r = interestRate / 12
+80 payment = (p * (1 + r)^n * r) / ((1 + r)^n - 1)
+90 output label1 
+100 output p and end line
+110 output label2
+120 output interestRate
+130 output label3 and end line
+140 output label4
+150 output paybackPeriod
+160 output label5 and end line
+170 output label6
+180 output payment and end line
+190 END
+
+
+4. Test Cases
+Test Case #1: INPUT: p=$270 000  interestRate=5.125%  paybackPeriod=30  expected OUTPUT payment=$1470.00
+10 output objective
+20 output author
+30 p = 270000
+40 interestRate = .05125
+50 paybackPeriod = 30
+60 n = 30 *12
+70 r = .05125 / 12
+80 payment = (270000 * (1 + .05125 / 12)^30 *12 * .05125 / 12) / ((1 + .05125 / 12)^30 *12 - 1)
+90 Amount borrowed = $ 
+100 270000
+110 Annual interest rate  =
+120 .05125
+130 % 
+140 Payback period  = 
+150 30
+160  Years
+170 Monthly payment  = $
+180 1470.00
+190 END

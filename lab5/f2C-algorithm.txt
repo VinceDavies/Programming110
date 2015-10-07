@@ -1,0 +1,39 @@
+COMSC-110
+Teacher
+
+1. Objective:  Enter a temperature in farenheit to have its equivalent temperature in Celcius displayed.
+
+2. Requirements:
+--INPUT: 
+f= determined by user
+--PROCESSING: 
+c = 5 * (f - 32) / 9
+
+
+--OUTPUT:
+objective
+author 
+user instructions: "Enter a temperature in farenheit to have its equivalent temperature in Celcius displayed."
+output prompt to user to ask for temperature in degrees F
+output temperature in degrees C.
+
+--DATA:
+f=determined by user
+c = 5 * (f - 32) / 9
+
+
+3. Algorithm Instructions
+10 output objective
+20 output author
+30 Prompt user to enter a temperature in farenheit.
+280 output "%f degrees farenheit is %c degrees in celcius"
+290 END
+
+
+4. Test cases
+Test Case #1: farenheit=32
+c=5*(32-32)/9
+c=0
+output "32 degrees farenheit is 0 degrees celcius"
+
+570 END

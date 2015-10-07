@@ -1,0 +1,65 @@
+COMSC-110-8215
+Teacher
+
+1. Objective: ask the user 3 addition or subtraction questions and let the user know whether they got each question correct or if not correct, then what is the correct answer.
+
+2. Requirements:
+--INPUT
+answer1 (set by user)
+answer2 (set by user)
+answer3 (set by user)
+
+
+--PROCESSING
+none
+
+--OUTPUT
+objective
+author
+user instructions: tell user to answer 3 math questions
+label1 "3+3=? "
+label2 " 3-3=? "
+label3 " 2+2=?" 
+label4 "good job your answer is correct."
+label5 "nice job but a better answer is"
+
+
+--DATA
+answer1
+answer2
+answer3
+correctAnswer1
+correctAnswer2
+correctAnswer3
+
+3. Algorithm Instructions
+10 output objective
+20 output author
+30 output user instructions (if any)
+40 output label1
+50 read user input, save as answer1
+60 compare answer1 to correctAnswer1. if correct, print label4. else: print label5 + correctAnswer1.
+70 output label2
+80 read user input, save as answer2
+90 compare answer2 to correctAnswer2. if correct, print label4. else: print label5 + correctAnswer2.
+100 output label3
+110 read user input, save as answer3
+120 compare answer3 to correctAnswer3. if correct, print label4. else: print label5 + correctAnswer3.
+130 END
+
+
+4. Test Cases
+Test Case#1: answer1=6 answer2=0 answer3=5
+10 output objective
+20 output author
+30 output user instructions (if any)
+40 3+3=?
+50 6
+60 good job your answer is correct.
+70 3-3=?
+80 0
+90 good job your answer is correct.
+100 2+2=?
+110 5
+120 nice job but a better answer is 4
+130 END

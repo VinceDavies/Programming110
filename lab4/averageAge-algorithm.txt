@@ -1,0 +1,80 @@
+Name: Vinzent Davies
+Course: COMSC-110-8215
+
+1. Objective: calculate 3 persons ages 
+
+2. Requirements
+INPUT:
+author asks for the ages of 3 individuals and assigns them to values.
+
+PROCESSING:
+age1=12
+age2=34
+age3=40
+avgAge
+
+OUTPUT:
+objective
+author
+user instructions (Tell user that the program will calculate the average age of 3 people)
+label1: "The first age is"
+age1
+label2: "The second age is"
+age2
+label3: "The third age is"
+age3
+label4: "The average age is"
+avgAge
+
+DATA:
+age1  (double)
+age2 (double)
+age3 (double)
+avgAge (double)
+
+3. Instructions
+10 output objective
+20 output author
+30 age1=12
+   age2=34
+   agea3=40
+40 avgAge=(age1+age2+age3)/3
+50 output
+label1: "The first age is"
+age1
+label2: "The second age is"
+age2
+label3: "The third age is"
+age3
+label4: "The average age is"
+avgAge
+60 END
+70 
+80 
+90 
+100 
+110 
+120 
+130 
+140
+150
+
+4. Test Cases
+Test Case#1: What is being tested: age1=0  age2=0 age3=0 
+10 output objective
+20 output author
+30 age1=0
+   age2=0
+   agea3=0
+40 avgAge=(age1+age2+age3)/3
+	avgAge=0
+50 output
+label1: "The first age is"
+0
+label2: "The second age is"
+0
+label3: "The third age is"
+0
+label4: "The average age is"
+0
+60 END
