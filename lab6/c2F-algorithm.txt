@@ -1,0 +1,38 @@
+COMSC-110
+Teacher
+
+1. Objective:  Enter a temperature in farenheit to have its equivalent temperature in Celcius displayed.
+
+2. Requirements:
+--INPUT: 
+c= determined by user
+--PROCESSING: 
+f = 9.0 / 5.0 * c + 32.0;
+
+--OUTPUT:
+objective
+author 
+user instructions: "This program will convert a temperature from Celsius to Farenheit. enter -999 to quit"
+output prompt to user to ask for temperature in degrees C
+output temperature in degrees F.
+
+--DATA:
+c=determined by user
+f = 9.0 / 5.0 * c + 32.0;
+
+
+
+3. Algorithm Instructions
+10 output objective
+20 output author
+30 Prompt user to enter a temperature in celsius.
+280 output "%c degrees celsius is %f degrees in farenheit"
+290 END
+
+
+4. Test cases
+Test Case #1: celsius=100
+f=212
+output "100 degrees celsius is 212 degrees farenheit"
+
+570 END

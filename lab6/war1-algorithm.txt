@@ -1,0 +1,38 @@
+1. Objective
+simulate playing the card game "war"
+2. Requirements
+INPUT:
+none
+
+PROCESSING:
+compCard=math.random(2,14)
+humanCard=math.random(2,14)
+compSuit=math.random(0,3)
+humanSuit=math.random(0,3)
+if humanCard>compCard --> "human wins!"
+if humanCard==compCard --> "tie!"
+if humanCard<compCard --> "compute wins!"
+OUTPUT:
+instructions
+
+
+DATA:
+int flip
+string coin
+
+3. Instructions
+10 output user instructions
+20 flip=math.random(0,1)
+30 if flip=1 --> coin=heads
+40 if flip=0 --> coin= tails
+50 output label 1
+60 END
+
+4. Test Cases
+Test Case#1: What is being tested:The random number is comes up as 1. Input values if any:none
+10 output user instructions
+20 flip=math.random(0,1)
+30 if flip=1 --> coin=heads TRUE
+40 if flip=0 --> coin= tails
+50 "The result of the coin flip is heads"
+60 END

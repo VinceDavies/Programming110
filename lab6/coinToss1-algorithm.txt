@@ -1,0 +1,36 @@
+1. Objective
+simulate a coin flip that comes up heads or tails, and display the result.
+
+2. Requirements
+INPUT:
+none
+
+PROCESSING:
+flip=math.random(0,1)
+if flip=1 --> coin=heads
+if flip=0 --> coin= tails
+
+OUTPUT:
+instructions
+label 1= "The result of the coin flip is" + coin
+
+DATA:
+int flip
+string coin
+
+3. Instructions
+10 output user instructions
+20 flip=math.random(0,1)
+30 if flip=1 --> coin=heads
+40 if flip=0 --> coin= tails
+50 output label 1
+60 END
+
+4. Test Cases
+Test Case#1: What is being tested:The random number is comes up as 1. Input values if any:none
+10 output user instructions
+20 flip=math.random(0,1)
+30 if flip=1 --> coin=heads TRUE
+40 if flip=0 --> coin= tails
+50 "The result of the coin flip is heads"
+60 END
