@@ -1,0 +1,43 @@
+1. Objective
+randomly generate an integer between 1 and 100, input user guess as to what number it is, and output "correct!" if the user guess is the random number, or "high" if the user guess is too high, or "low" if the user guess is too low.
+
+2. Requirements
+INPUT:
+int guess
+
+PROCESSING:
+number=math.random(0,100)
+if guess==number--> break loop
+if guess<number --> print "low"
+if guess>number --> print "high"
+
+OUTPUT:
+instructions
+string label1= "low"
+string label2= "high"
+string label3= "correct!"
+string label4= "Please guess a number between 1 and 100."
+
+DATA:
+int guess
+int number
+
+
+3. Instructions
+10 output user instructions
+20 number=math.random(0,100)
+25 prompt user for input integer between 1 and 100.
+30 if guess==number--> break loop
+40 if guess<number --> print "low"
+50 if guess>number --> print "high"
+60 END
+
+4. Test Cases
+Test Case#1: What is being tested:The random number is comes up as 50. Input values if any:guess=60, then guess=50.
+10 output user instructions
+20 number=50
+30 guess=60
+35 output "high"
+40 guess=50
+50 output "correct!"
+60 END

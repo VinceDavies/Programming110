@@ -1,0 +1,57 @@
+COMSC-110-8215
+Teacher
+
+1. Objective: calculate the distance in miles a ship at sea can see the lighthouse.
+
+2. Requirements:
+--INPUT
+height (set by author or user)
+
+
+--PROCESSING
+distance = square root of 0.8 * height
+
+--OUTPUT
+objective
+author
+user instructions (if any)
+label1 "A "
+label2 " foot tall lighthouse can be seen from "
+label3 " miles away." 
+height (unformatted)
+distance (formatted to 0 digits past the decimal point and no decimal point)
+
+
+--DATA
+height-->>height of lighthouse in feet (integer)
+distance-->>distance from the lighthouse in miles (decimal)
+
+
+3. Algorithm Instructions
+10 output objective
+20 output author
+30 output user instructions (if any)
+40 height = set by author or user
+50 distance = square root of 0.8 * height
+60 output label1
+70 output height
+80 output label2
+90 output distance formatted to 0 digits past the decimal point and no decimal point
+100 output label3
+110 END
+
+
+
+4. Test Cases
+Test Case#1: height=100.  expected output is "A 100 foot tall lighthouse can be seen from 9 miles away." (NOT 8.94427191)
+10 output objective
+20 output author
+30 output user instructions (if any)
+40 height = 100
+50 distance = square root of 0.8 * 100
+60 A 
+70 100
+80 foot tall lighthouse can be seen from
+90 9
+100 miles away.
+110 END

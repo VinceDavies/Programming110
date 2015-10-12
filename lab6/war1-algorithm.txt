@@ -11,20 +11,66 @@ compSuit=math.random(0,3)
 humanSuit=math.random(0,3)
 if humanCard>compCard --> "human wins!"
 if humanCard==compCard --> "tie!"
-if humanCard<compCard --> "compute wins!"
-OUTPUT:
-instructions
+if humanCard<compCard --> "computer wins!"
 
+if compSuit==0 --> cSuit=spades
+if compSuit==1 --> cSuit=diamonds
+if compSuit==2 --> cSuit=hearts
+if compSuit==3 --> cSuit=clubs
+
+if humanSuit==0 --> hSuit=spades
+if humanSuit==1 --> hSuit=diamonds
+if humanSuit==2 --> hSuit=hearts
+if humanSuit==3 --> hSuit=clubs
+
+if compCard==11 cCard="Jack"
+if compCard==12 cCard="Queen"
+if compCard==13 cCard="King"
+if compCard==14 cCard="Ace"
+
+if humanCard==11 hCard="Jack"
+if humanCard==12 hCard="Queen"
+if humanCard==13 hCard="King"
+if humanCard==14 hCard="Ace"
+
+OUTPUT:
+user instructions
+label1 "human wins!"
+label2 "comp wins!"
+label3 "it is a tie!"
+label4 "Computer's card is a "
+label5 "Human card is a "
+label6 "of"
 
 DATA:
-int flip
-string coin
+int compCard=math.random(2,14)
+int humanCard=math.random(2,14)
+int compSuit=math.random(0,3)
+int humanSuit=math.random(0,3)
 
 3. Instructions
 10 output user instructions
-20 flip=math.random(0,1)
-30 if flip=1 --> coin=heads
-40 if flip=0 --> coin= tails
+20 compCard=math.random(2,14)
+25 humanCard=math.random(2,14)
+26 compSuit=math.random(0,3)
+27 humanSuit=math.random(0,3)
+28if compSuit==0 --> cSuit=spades
+  if compSuit==1 --> cSuit=diamonds
+  if compSuit==2 --> cSuit=hearts
+  if compSuit==3 --> cSuit=clubs
+  if humanSuit==0 --> hSuit=spades
+  if humanSuit==1 --> hSuit=diamonds
+  if humanSuit==2 --> hSuit=hearts
+  if humanSuit==3 --> hSuit=clubs
+  if compCard==11 cCard="Jack"
+  if compCard==12 cCard="Queen"
+  if compCard==13 cCard="King"
+  if compCard==14 cCard="Ace"
+  if humanCard==11 hCard="Jack"
+  if humanCard==12 hCard="Queen"
+  if humanCard==13 hCard="King"
+  if humanCard==14 hCard="Ace"
+30 
 50 output label 1
 60 END
 
